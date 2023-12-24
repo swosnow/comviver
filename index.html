@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 <body>
+    <input id="close-menu" type="checkbox" class="close-menu" aria-label="Close menu" role="button">
+    <label for="close-menu" title="close menu" class="close-menu-label"></label>
+    
+    
     <aside class="menu">
         <section class="main-content menu-content">
-            <img src="assets/images/logocomviver-removebg.png" class="imgback" alt="project-image">
+            <img src="assets/images/logocomviver.png" class="menuimg" alt="project-image">
                 
             </img>
             
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#galeria">galeria</a></li>
                     <li><a href="https://wa.me/5521997271258" target="_blank">contato</a></li>
@@ -29,20 +33,21 @@
     <section id="intro" class="intro white-bg section">
         <div class="main-content intro-content">
             <div class="intro-text">
-                <h2>A COMVIVER Arquitetura</h2>
+                <h1>A COMVIVER</h1>
                 <p>Para a identidade, buscamos trazer a representação da vida, sendo observada de cima: a presença da ação humana na terra, em cada detalhe dos ambientes e das paisagens. Uma visão  aérea de um cômodo que tem seu toque e essência gerados pela intervenção humana . A tipografia cursiva em conjunto com a de forma criam uma atmosfera mais acolhedora e moderna.</p>
                 <a href="https://wa.me/5521997271258" target="_blank"><button class="btn">Orçamento pelo Whatsapp</button></a>
             </div>
             <div class="intro-image"><img src="assets/images/equipe.jpg" alt="equipecomviver"></div>
         </div>
     </section>
-    <div class="teste"></div>
     
-    <section id="galeria" class="grid-one test-bg section">
+    <div class="line"></div>
+    
+    <section id="galeria" class="grid-one main-bg section">
         
         <div class="main-bg main-content grid-one-content">
-            <h2>Galeria</h2>
-            <p class="grid-description">Conheça alguns dos nossos projetos</p>
+            <h1>Galeria</h1>
+            <p class="grid-description">Conheça alguns dos nossos projetos:</p>
             <div class="grid">
                 <div class="gallery-image">               
                     <img src="assets/images/quarto360.jpg" alt="quarto">
@@ -61,19 +66,19 @@
                 </div>
                 <div class="gallery-image">               
                     <img src="assets/images/quartobebe.jpg" alt="quarto">
-                </div>
-
-            
+                </div>           
         </div>
     </section>
-    <div class="teste"></div>
+    
+    <div class="line"></div>
+    
     <section class="section white-bg">
         <div class="main-content grid-one-content">
-            <h2>RESPONSABILIDADE</h2>
+            <h1>serviços</h1>
             <div class="grid">
                 <div class="item">
                     <h3>Fornecedores</h3>
-                    <p>Indicamos os melhores fornecedores que garantiram a qualidade e desempenho</p>
+                    <p>Indicamos os melhores fornecedores que garantiram a qualidade e desempenho.</p>
                 </div>
                 <div class="item">
                     <h3>Acompanhamento</h3>
@@ -81,16 +86,18 @@
                 </div>
                 <div class="item">
                     <h3>Dentro e Fora</h3>
-                    <p>Arquitetamos o projeto seguindo a harmonia do interior ao exterior</p>
+                    <p>Arquitetamos o projeto seguindo a harmonia do interior ao exterior.</p>
                 </div>
             </div>
 
         </div>
     </section>
-    <div class="teste"></div>
+    
+    <div class="line"></div>
+    
     <section id="duvidas" class="grid-one main-bg section">
         <div class="main-content grid-one-content">
-            <h2>dúvidas</h2>
+            <h1>dúvidas</h1>
             <div class="grid">
                 <article>
                     <h3>Por Que Contratar um arquiteto?</h3>
@@ -108,15 +115,11 @@
                 </article>            
            </div>
     </section>
-    <div class="teste"></div>
-    <footer>
-        <div class="baixo">
-            <section class="main-content menu-content">
-                <img src="assets/images/logocomviver-removebg.png" alt="logo" class="imgback"></img>
-                <p>todos os direitos reservados</p>
-                <p>criado por isaque anderson</p>               
-            </section>
-        </div>
+    
+    <footer class="footer white-bg">
+        <a href="https://www.instagram.com/comviver.arq/" target="_blank"><p>instagram</p></a>
+        <p>todos os direitos reservados</p>
+        <a href="https://www.instagram.com/isaque_swo/" target="_blank"><p>creditos: isaque anderson</p></a>
     </footer>
     
 
