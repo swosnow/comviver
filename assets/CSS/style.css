@@ -39,11 +39,11 @@ a {
     text-decoration: none;
 }
 h1 {
-    color: var(--third-color);
-    font-size: 6rem;
+    color: white;
+    font-size: 3rem;
     font-family:'libre';
-    padding-bottom: 3rem;
-    color: var(--third-color);
+    padding-bottom: 5rem;
+    
 }
 
 h2 {
@@ -66,20 +66,14 @@ h2 {
     gap: var(--gap);
     
 }
-.intro-content h2{
-    font-size: 5rem;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-    font-family: libre;
-    color: var(--third-color)
 
-}
 
 .intro-content p{
+    
     font-size: 2.5rem;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--secondary-color);
+    color: white;
 }
 
 .intro-text, .intro-image {
@@ -105,7 +99,7 @@ h2 {
 }
 .main-content h1{
     text-align: center;
-    font-size: 90px;
+    font-size: 5rem;
 }
 
 
@@ -142,7 +136,9 @@ h2 {
 .white-bg{
     background: var(--fourth-color);
 }
-
+.secondary-bg {
+    background: var(--secondary-color);
+}
 .test-bg{
    background-image: url('../images/backgroundcomviver2.png');
    background-size: cover;
@@ -371,7 +367,7 @@ h2 {
 
 /*serviços*/
 .item{
-    background-image: linear-gradient(to left, #eee, rgb(228, 220, 220));
+    background-color: #fc885e;
     box-shadow: 0.5rem 0.5rem  rgb(197, 190, 190);
     border-radius: 1rem;
     padding: 1rem;
@@ -380,13 +376,14 @@ h2 {
 }
 
 .item h3{
-    color: var(--primary-color);
+    padding-bottom: 1rem;
+    color: var(--fourth-color);
     font-family: libre;
     text-align: center;
 }
 .item p{
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--secondary-color);
+    color: var(--fourth-color);
     
 }
 
@@ -445,6 +442,7 @@ h2 {
     
 }
 .glass-menu span {
+    font-family: Arial, Helvetica, sans-serif;
     color: #E26455;
     font-size: 90px;
 }
@@ -624,7 +622,7 @@ h2 {
     animation: slidy 10000ms infinite;
 }
 .wraper .scroller img {
-    min-width: calc(100% / 4);
+    min-width: calc(120% / 4);
     flex: 1;
     padding: 0 .5rem;
 }
