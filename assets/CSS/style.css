@@ -40,9 +40,10 @@ a {
 }
 h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 6rem;
     font-family:'libre';
     padding-bottom: 5rem;
+    text-align: center;
     
 }
 
@@ -53,6 +54,9 @@ h2 {
     text-transform: uppercase;
     font-family: 'voni';
     color: var(--third-color);
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 /*intro area*/
 .intro-content{
@@ -129,7 +133,7 @@ h2 {
 .main-bg {
     background-color: #E26455;
     background-size: cover;
-    background-size: center center;
+    background-position: center center;
     
     
 }
@@ -142,7 +146,7 @@ h2 {
 .test-bg{
    background-image: url('../images/backgroundcomviver2.png');
    background-size: cover;
-   background-size: center center;
+   background-position: center center;
 }   
 /**/
 
@@ -205,36 +209,6 @@ h2 {
 }
 /**/
 
-/*images*/
-.gallery-image {
-    width: 100%;
-    max-width: 72rem;
-    max-height: 30rem;
-    overflow: hidden;
-    border-radius: 0.4rem;
-    box-shadow: 0.5rem 0.5rem 2rem black
-    
-}
-
-.gallery-image img {
-    width: 100%;
-    height: 100%;
-    transition: all 300ms ease-in-out;
-
-}
-
-.gallery-image img:hover {
-    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
-    
-}
-
-
-.gallery-image:hover{
-    box-shadow: 5px 5px 20px var(--third-color)
-}
-/**/
-
-
 /*Footer area*/
 .footer {
     height: 9vh;
@@ -293,13 +267,13 @@ h2 {
         grid-template-columns: 1fr;
     }
 
-    .gallery-image {
+    .gallery {
         
         width: 100%;
         max-width: 100%;
         max-height: 100%;
     }
-    .gallery-image img {
+    .gallery img {
         width: 100%;
     }
     .grid-one-content{
@@ -482,30 +456,42 @@ h2 {
     left: 15%;
 }
 .menu-box {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
     background-color: transparent;
-    position: relative;
     width: 400px;
-    height: 100px;    
-    margin: 0 auto;
+    height: 60px;    
+    margin: 10px auto;
+    
+    gap: var(--gap);
 }
 
-.menu-box-btn{
-    display: grid;
-    
-    grid-template-columns: repeat(3, 1fr);
+.menu-box-btn {
+    display: flex;
+    align-items: center ;
+    justify-content: center;
     gap: var(--gap);
     
 }
 .menu-box-btn button{
-    bottom: 10px;
-    right: 10px;
-    background-color: transparent;
-    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 55px;
+    border-radius: 30%;
     border: none;
-    padding: 10px;
-    font-size: 20px;
+    background-color: var(--fourth-color);
     cursor: pointer;
-    
+    transition: all 300ms ease-in-out;
+}
+.menu-box-btn button:hover{
+    border: solid 1px;
+    background-color: #F2A313;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px #F2A313;
+
 }
 
 
@@ -610,7 +596,7 @@ h2 {
 
 
 .wraper {
-    height: 460px;
+    height: 360px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -619,13 +605,29 @@ h2 {
 .scroller {
     display: flex;
     width: 100%;
-    animation: slidy 10000ms infinite;
+    animation: slidy 15000ms infinite;
 }
-.wraper .scroller img {
-    min-width: calc(120% / 4);
+.scroller2{
+    
+    display: flex;
+    width: 100%;
+    animation: slidy2 15000ms infinite;
+    
+}
+.scroller2 img {
+    min-width: calc(100% / 3.9);
     flex: 1;
-    padding: 0 .5rem;
+    padding: 0.5rem;
 }
+
+.wraper .scroller  img {
+    min-width: calc(100% / 4.1);
+    flex: 1;
+    padding: 0.5rem;
+}
+
+
+
 @keyframes slidy {
    0%{margin-left:0%;}
   20%{margin-left:0%;}
@@ -640,7 +642,25 @@ h2 {
   95%{margin-left:-100%;}
 
  100%{margin-left:0%;}
+ 
 }
+@keyframes slidy2 {
+    0%{margin-left:0%;}
+   20%{margin-left:-100%;}
+ 
+   25%{margin-left:-100%;}
+   45%{margin-left:-200%;}
+ 
+   50%{margin-left:-200%;}
+   70%{margin-left:-100%;}
+ 
+   75%{margin-left:-100%;}
+   95%{margin-left: 0%;}
+ 
+  100%{margin-left:0%;}
+  
+ }
+
 
 
 #contact {
@@ -656,3 +676,39 @@ h2 {
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+
+.gallery {
+    min-width: 300px;
+    height: 100%;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 0.4rem;
+    gap: var(--gap);
+
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.gallery img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+    
+}
+
+
+.gallery:hover{
+    box-shadow: 5px 5px 20px var(--third-color)
+}
+
+.main-content2 {
+    margin: 0 90px;
+    
+    
+    
+}
+
+
+
