@@ -20,7 +20,12 @@
     font-style: normal;
     
 }
-
+@font-face{
+    font-family: 'vonique92';
+    src: url('Vonique\ 92_D.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 /**/
 
 
@@ -39,9 +44,10 @@ a {
     text-decoration: none;
 }
 h1 {
-    color: white;
+    font-style: bold;
+    color: black;
     font-size: 6rem;
-    font-family:'libre';
+    font-family:'vonique92';
     padding-bottom: 5rem;
     text-align: center;
     
@@ -84,6 +90,8 @@ p {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    margin-top: 50px;
+    
     
 }
 
@@ -111,13 +119,12 @@ p {
 .menu-space {
     background-color:var(--fourth-color);
     height: 53px;
+    visibility: hidden;
     
 }
 /**/
 
-.section {
-    min-height: 70vh;
-}
+
 .text {
     display: flex;
     text-align: center;
@@ -131,6 +138,7 @@ p {
 }
 /*backgrounds*/
 .main-bg {
+    
     background-color: #E26455;
     background-size: cover;
     background-position: center center;
@@ -138,7 +146,7 @@ p {
     
 }
 .white-bg{
-    background: var(--fourth-color);
+    background: white;
 }
 .secondary-bg {
     background: var(--secondary-color);
@@ -185,18 +193,24 @@ p {
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--gap);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
     width: 100%;
-    scale: 1.5;
-    
-    
+    margin-bottom: 70px;    
 }
+.service-grid p {
+    font-size: 2.8rem;
+    text-align: justify;
+}
+.service-grid h3{
+    font-size: 3rem;
+}
+
 
 .grid h3 {
     color: var(--secondary-color);
     font-family: 'cocogothic';
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -236,7 +250,7 @@ p {
 .btn {
     
     border-radius: 1rem;
-    background-color: #F2A313;
+    background-color: #ffffff;
     text-align: center;
     text-decoration: dashed;
     text-decoration: none;
@@ -329,6 +343,11 @@ p {
     .footer p {
         font-size: 1.5rem;
     }
+
+    div.galeria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 15vh;
+    }
     
 }
 /**/
@@ -344,7 +363,8 @@ p {
     background-color: #fc885e;
     box-shadow: 0.5rem 0.5rem  rgb(197, 190, 190);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 3rem;
+    margin: 0 5rem;
     font-size: 1.5rem;
     transition: all 300ms ease-in-out;
 }
@@ -434,6 +454,7 @@ p {
     display: inline-block;
     margin: 0 70px;
     font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .conte ul li a{
     position: relative;
@@ -458,7 +479,7 @@ p {
 .menu-box {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     background-color: transparent;
     width: 400px;
     height: 60px;    
@@ -478,20 +499,20 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
+    width: 60px;
     height: 55px;
-    border-radius: 30%;
-    border: none;
-    background-color: var(--fourth-color);
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-}
-.menu-box-btn button:hover{
-    border: solid 1px;
-    background-color: #F2A313;
-    transform: scale(1.1);
-    box-shadow: 5px 5px 5px #F2A313;
 
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.menu-box-btn button img{
+    height: 40px;
+}
+.section {
+    visibility: hidden;
 }
 
 
@@ -535,6 +556,7 @@ p {
     width: 100%;
     height: 100%;
     position: absolute;
+    border-radius: 10px;
     backface-visibility: hidden;
     backdrop-filter: blur(10px);
 }
@@ -569,15 +591,16 @@ p {
 
 .porcen{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
-    height: 150px;
-    background-color: #F4E9DF;
-    border-radius: 1rem;
-    border: 3px solid var(--primary-color);
+    justify-content: center;
+    height: 300px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    
     padding: 4rem;
     font-size: 1.5rem;
-    transition: all 300ms ease-in-out;
+    
 }
 
 .porcen h3{
@@ -605,46 +628,33 @@ p {
 .scroller {
     display: flex;
     width: 100%;
-    animation: slidy 15000ms infinite;
+    animation: slidy 20000ms infinite;
 }
 .scroller2{
     
     display: flex;
     width: 100%;
-    animation: slidy2 15000ms infinite;
+    animation: slidy 20000ms infinite;
     
 }
 .scroller2 img {
-    min-width: calc(100% / 3.9);
+    min-width: calc(100% / 3.1);
+    object-fit: cover;
     flex: 1;
     padding: 0.5rem;
 }
 
 .wraper .scroller  img {
-    min-width: calc(100% / 4.1);
+    min-width: calc(100% / 2.6);
     flex: 1;
     padding: 0.5rem;
+    object-fit: cover;
 }
+
 
 
 
 @keyframes slidy {
-   0%{margin-left:0%;}
-  20%{margin-left:0%;}
-
-  25%{margin-left:-100%;}
-  45%{margin-left:-100%;}
-
-  50%{margin-left:-200%;}
-  70%{margin-left:-200%;}
-
-  75%{margin-left:-100%;}
-  95%{margin-left:-100%;}
-
- 100%{margin-left:0%;}
- 
-}
-@keyframes slidy2 {
     0%{margin-left:0%;}
    20%{margin-left:-100%;}
  
@@ -678,37 +688,72 @@ p {
 }
 
 
-.gallery {
-    min-width: 300px;
-    height: 100%;
-    margin: 10px;
-    overflow: hidden;
-    border-radius: 0.4rem;
-    gap: var(--gap);
 
+
+
+
+.section-shadonw{
+    box-shadow: 1px 1px 100px white;
 }
-.gallery img{
+
+
+.grad{
+    height: 30px;
+    background-image: linear-gradient(to top, white, #E26455 );
+    visibility: hidden;
+    
+}
+.grad2{
+    height: 30px;
+    background-image: linear-gradient(to top, #E26455, white );
+    visibility: hidden;
+    
+}
+
+
+
+#testing{
+    background-color: #E26455;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+div.galeria2{
+    width: 100%;
+    
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 30vh;
+    padding-bottom: 50px;
+}
+
+div.galeria2 div.single-galeria{
+    border-radius: 5px;
+    margin: 0.5vw;
+    overflow: hidden;
+}
+
+.h-2{
+    grid-row: span 2;
+}
+.w-2{
+    grid-column: span 2;
+}
+
+div.galeria2 div.single-galeria img{
     width: 100%;
     height: 100%;
-    transition: all 300ms ease-in-out;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.25s ease-in-out;
 }
-
-.gallery img:hover {
-    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
-    
+div.galeria2 div.single-galeria img:hover{
+    transform: scale(1.1);
 }
-
-
-.gallery:hover{
-    box-shadow: 5px 5px 20px var(--third-color)
-}
-
-.main-content2 {
-    margin: 0 90px;
-    
-    
-    
-}
-
 
 
