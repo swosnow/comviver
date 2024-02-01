@@ -1,0 +1,61 @@
+[
+    {
+      "name" : "Int",
+      "images" : [
+        {
+            "src": "./images/int/cv (29).JPG",
+            "alt": "quarto"
+          },
+          {
+            "src": "./images/int/cv (33).JPG",
+            "alt": "quarto"
+          },
+          {
+            "src": "./images/int/cv (74).JPG",
+            "alt": "quarto"
+          },
+          {
+            "src": "./images/int/cv (95).JPG",
+            "alt": "quarto"
+          },
+          {
+            "src": "./images/int/MT-2.JPG",
+            "alt": "quarto"
+          },
+          {
+            "src": "./images/int/MT-6.JPG",
+            "alt": "quarto"
+          }
+      ]
+    },
+    {
+      "name" : "Casas",
+      "images" : [
+          {
+            "src": "./images/casas/cv (34).JPG",
+            "alt": "Casa"
+          },
+          {
+            "src": "./images/casas/bancadaquarto.jpg",
+            "alt": "Casa"
+          },
+          {
+            "src": "./images/casas/projetocozinha.jpg",
+            "alt": "Casa"
+          }
+      ]
+    },
+    {
+      "name" : "Comercial",
+      "images" : [
+          {
+            "src": "./images/comercial/cv (31).JPG",
+            "alt": "comercial"
+          },
+          {
+            "src": "./images/comercial/quartobebe.jpg",
+            "alt": "comercial"
+          }
+      ]
+    }
+  ]
