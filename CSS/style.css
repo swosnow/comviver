@@ -194,9 +194,6 @@ p {
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     gap: 6rem;
-    
-
-
 }
 
 .service-grid {
@@ -290,6 +287,16 @@ p {
         grid-template-columns: 1fr;
     }
 
+    .service-grid{
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 50px;
+
+    }
+    .service-grid p{
+        font-size: 1.8rem;
+
+    }
+
     .gallery {
         
         width: 100%;
@@ -357,7 +364,94 @@ p {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 15vh;
     }
+
+    .image-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+        
+    }
+
+    .flip-cards {
+        text-align: center;
+    }
     
+    .flip-cards-content {
+        padding: 20px 0;
+    }
+    
+    .flip-cards-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flip-card {
+        display: flex;
+        flex-direction: column (2);
+        max-width: 300px;
+        max-height: 100px;
+        perspective: 100px;
+        padding-bottom: 10px;
+        margin: 0 20px;
+        
+    }
+    
+    
+    .flip-card-front {
+        background-image: linear-gradient(to left, #eee, rgb(228, 220, 220));
+        background-color: #3498db;
+        box-shadow: 0.5rem 0.5rem  rgb(197, 190, 190);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: libre;
+        text-align: center;
+        color: var(--secondary-color)
+    }
+    .flip-card-front h3{
+        font-size: 18px;
+    }
+    
+    .flip-card-back {
+        background-color: var(--primary-color);
+        box-shadow:0.7rem 0.7rem 1.2rem rgb(155, 150, 150);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        transform: rotateY(180deg);
+        
+    }
+    .flip-card-back p{
+        font-size: 13px;
+    }
+
+    footer .f p{
+        font-size: 2rem;
+    }
+
+    .glass-menu h1 span{
+        font-size: 100px;
+    }
+
+    .conte .flex ul li{
+        display: inline-block;
+        margin: 0 6px;
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .conte .flex img{
+        height: 6rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 /**/
 
@@ -836,4 +930,15 @@ div.galeria2 div.single-galeria img:hover{
     
 .image-item:is(:hover, :focus) img {
     transform: scale(1.03);
+}
+
+.f p{
+    font-size: 3rem;
+}
+
+
+.sect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
