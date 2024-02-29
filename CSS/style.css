@@ -282,7 +282,7 @@ p {
 .close-menu {
     display: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .intro-content, .grid {
         grid-template-columns: 1fr;
     }
@@ -452,6 +452,44 @@ p {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+
+
+    .wraper .scroller2 img {
+        min-width: calc(100% / 2);
+        object-fit: cover;
+        flex: 1;
+        padding: 0.5rem;
+    }
+    
+    .wraper .scroller  img {
+        min-width: calc(110% / 2);
+        flex: 1;
+        padding: 0.5rem;
+        object-fit: cover;
+    }
+
+    @keyframes slidy {
+        0%{margin-left:0%;}
+       20%{margin-left:-100%;}
+     
+       25%{margin-left:-100%;}
+       45%{margin-left:-200%;}
+     
+       50%{margin-left:-200%;}
+       70%{margin-left:-100%;}
+     
+       75%{margin-left:-100%;}
+       95%{margin-left: 0%;}
+     
+      100%{margin-left:0%;}
+
+      110%{margin-left: 100%;}
+
+      120%{margin-left: 110%;}
+      
+    }
+
+
 }
 /**/
 
