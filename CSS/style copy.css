@@ -79,7 +79,7 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     text-transform: uppercase;
-    font-family: 'libre';
+    font-family: 'voni';
     color: var(--third-color);
 }
 p {
@@ -124,7 +124,6 @@ p {
 
 }
 /**/
-
 nav{
     z-index: 99;
     position: relative;
@@ -159,9 +158,8 @@ nav ul li{
 }
 
 nav ul a{
-    font-size: 1.8em;
+    font-size: 0.8em;
     text-transform: uppercase;
-    color: var(--primary-color);
 }
 
 nav .containER .menu-btn{
@@ -212,14 +210,14 @@ header h1{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    top: 40%;
+    top: 20%;
     right: 0;
     animation: text1 0.8s ease-in forwards;
 }
 
 .h-regular{
     color: var(--primary-color);
-    top: 60%;
+    top: 40%;
     left: 42%;
     animation: text2 0.8s ease-in forwards;
     animation-delay: 500ms;
@@ -645,9 +643,7 @@ header h1{
     .nav-background{
         background: #fff;
     }
-    .content .title{
-        font-size: 10rem;
-    }
+
 
 }
 
@@ -662,27 +658,15 @@ header h1{
         transform: translate(-50%, -50%);
         border-radius: 15px;
     }
-    .glass h2{
-        font-size: 2.7rem;
-        text-align: start;
-    }
-    .glass p{
-        font-size: 2rem;
-    }
     .h-glass{
         right: 52%;
-        top: 23%;
+        top: 10%;
         color: #1f1f1f;
         background-attachment: initial;
         background-size: 100% 130%;
-        font-size: 6rem;
-        visibility: hidden;
     }
-
     .h-regular{
-        top: 40%;
-        left: 18%;
-        font-size: 7rem;
+        top: 30%;
     }
     nav .containER .menu-btn{
         position: absolute;
@@ -705,12 +689,6 @@ header h1{
     .glass > div div:nth-child(1){
         display: none;
     }
-    .h-regular{
-        font-size: 5rem;
-        top: 30%;
-        left: 14%;
-    }
-
 }
 
 
