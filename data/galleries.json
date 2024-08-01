@@ -36,11 +36,16 @@
             "alt": "Casa"
           },
           {
-            "src": "./images/casas/bancadaquarto.jpg",
+            "src": "./images/casas/_MIN0513.JPG",
             "alt": "Casa"
           },
           {
             "src": "./images/casas/projetocozinha.jpg",
+            "alt": "Casa"
+          },
+
+          {
+            "src": "./images/casas/_MIN0491.JPG",
             "alt": "Casa"
           }
       ]

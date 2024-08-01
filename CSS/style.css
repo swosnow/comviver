@@ -169,7 +169,7 @@ nav .containER .menu-btn{
 
 header{
     height: 70vh;
-    background: url(MT-18.JPG) center no-repeat fixed;
+    background: url(_MIN0492.JPG) center no-repeat fixed;
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -201,7 +201,7 @@ header h1{
 }
 
 .h-glass{
-    background: url(MT-18.JPG) center no-repeat fixed;
+    background: url(_MIN0492.JPG) center no-repeat fixed;
     background-size: cover;
     color: transparent;
     background-clip: text;
@@ -626,6 +626,9 @@ header h1{
 
 }
 @media screen and (max-width: 480px){
+    .nextPrevArrows{
+        top: 97%;
+    }
     .h-glass{
         font-size: 3.2rem;
         left: 15%;
@@ -1004,7 +1007,7 @@ header h1{
 /* nextPrevArrows Section  */
 .nextPrevArrows{
     position: absolute;
-    top: 80%;
+    top: 93%;
     right: 52%;
     z-index: 100;
     width: 300px;
@@ -1282,3 +1285,64 @@ transform: rotateY(0deg);
     filter: brightness(0.8);
 }
 
+.video-text-container{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border:solid;
+    
+    border-left-color: var(--fourth-color);
+    border-right-color: var(--fourth-color);
+    
+    margin: 0 auto;
+
+    background-color: var(--fourth-color);
+    gap: 100px
+    
+}
+.video-text{
+    border: solid var(--fourth-color);
+    background-color: var(--fourth-color);
+    border-radius: 5px;
+    width: 450px;
+    height: 360px;
+    font-size: 3.5rem;
+    box-shadow: 5px 4px 4px ;
+
+}
+.sect-color{
+    color: var(--fourth-color);
+    height: 900px;
+}
+.video-text p{
+    
+    color: black;
+}
+.video-container .v{
+    margin: auto;
+   width: 250px;
+   background-color: #0fd472;
+
+}
+.video-container video{
+    object-fit: cover;
+    width: 360px;
+    
+}
+
+.grad-line{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 40%, rgba(226,100,85,1) 62%, rgba(226,100,85,1) 100%);
+    height: 2px;
+    
+}
+
+.grad-line-invert{
+    height: 3px;
+    
+    background:rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(226,100,85,1) 40%,rgba(255, 255, 255, 1) 62%, rgba(255,255,255,1) 100%);
+}
