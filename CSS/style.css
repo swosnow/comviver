@@ -625,6 +625,24 @@ header h1{
     }
 
 }
+@media screen and (max-width: 480px){
+    .h-glass{
+        font-size: 3.2rem;
+        left: 15%;
+    }
+    .h-regular{
+        font-size: 3.5rem;
+        top: 57%;
+        left: 19%;
+    }
+    .list .description{
+        font-size: 1.8rem;
+        text-align: start;
+    }
+    .grid-one-content{
+        align-items: center;
+    }
+}
 /**/
 
 .line {
