@@ -607,14 +607,21 @@ header h1{
     }
 
 }
-@media screen and (max-width: 500px){
-    .glass > div div:nth-child(1){
-        display: none;
+@media screen and (max-width: 600px){
+    .h-glass{
+        font-size: 3.5rem;
+        left: 17%;
     }
     .h-regular{
-        font-size: 5rem;
-        top: 30%;
-        left: 14%;
+        font-size: 3.7rem;
+        top: 55%;
+        left: 22%;
+    }
+    .ball-content{
+        margin: 0 auto;
+    }
+    .list .description{
+        font-size: 2rem;
     }
 
 }
