@@ -467,6 +467,8 @@ header h1{
         
     }
 
+
+
     
 
     .grid {
@@ -510,6 +512,45 @@ header h1{
       
     }
 }
+@media screen and (max-width: 1500px){
+    nav ul a{
+        font-size: 1.4em;
+        text-transform: uppercase;
+        color: var(--primary-color);
+    }
+    .glass h2{
+        padding-bottom: 30px;
+        font-size: 2.5rem;
+        text-align: left;
+        text-wrap: nowrap;
+    }
+    .h-glass{
+        right: 12%;
+        top: 33%;
+        color: #1f1f1f;
+        background-attachment: initial;
+        background-size: 100% 130%;
+        font-size: 5rem;
+        
+        
+       
+    }
+    .h-regular{
+        top: 55%;
+        left: 45%;
+        
+        font-size: 6rem;
+    }
+
+    .slider .nextPrevArrows{
+        position: absolute;
+        top: 83%;
+        right: 37%;
+
+    }
+
+}
+
 @media screen and (max-width: 900px){
     nav .containER{
         display: flex;
@@ -553,10 +594,21 @@ header h1{
     .content .title{
         font-size: 10rem;
     }
+    .container {
+        width: 200px;
+    }
 
 }
 
 @media screen and (max-width: 750px){
+    .slider .list .item2 .content{
+        font-size: 0.9rem;
+        position: absolute;
+        top: 10%;
+        width: 730px;
+        max-width: 81%;
+
+    }
 
     .glass{
         width: 90%;
@@ -606,6 +658,23 @@ header h1{
         height: 700px;
     }
 
+
+    .flip-card-front,
+    .flip-card-back {
+    width: 80px;
+    height: 200px;
+    height: auto;
+    font-family: 'libre';
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    }
+
 }
 @media screen and (max-width: 600px){
     .h-glass{
@@ -626,9 +695,7 @@ header h1{
 
 }
 @media screen and (max-width: 480px){
-    .nextPrevArrows{
-        top: 97%;
-    }
+
     .h-glass{
         font-size: 3.2rem;
         left: 15%;
@@ -664,7 +731,39 @@ header h1{
     .grid-one-content{
         align-items: center;
     }
+
+    .slider .nextPrevArrows{
+        top: 83%;
+        right: 50%;
+    }
 }
+
+@media screen and (max-width: 400px){
+    .h-regular{
+        font-size: 2.5rem;
+        top: 52%;
+        left: 17%;
+    }
+    .h-glass{
+        visibility: hidden;
+    }
+
+    .glass{
+        width: 90%;
+        height: initial;
+        min-height: 25em;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 15px;
+    }
+    .glass h2{
+        font-size: 1.5rem;
+    }
+
+}
+
+
 /**/
 
 .line {
@@ -853,6 +952,7 @@ header h1{
 .grad{
     height: 250px;
     background-image: linear-gradient(to top, white, #E26455 );
+    z-index: 1;
     
     
 }
@@ -944,6 +1044,7 @@ header h1{
     box-sizing: border-box;
     color: #fff;
     text-shadow: 0 5px 10px #0004;
+    font-family: 'libre';
 }
 
 .slider .list .item2 .content .title,
@@ -1182,8 +1283,8 @@ perspective: 1000px;
 
 .flip-card-front,
 .flip-card-back {
-width: 380px;
-min-height: 400px;
+width: 280px;
+min-height: 300px;
 height: auto;
 font-family: 'libre';
 background-color: var(--primary-color);
@@ -1271,7 +1372,7 @@ transform: rotateY(0deg);
 .main-footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background: var(--primary-color);
     color: #F4E9DF;
     padding: var(--spacing-gutter-large);

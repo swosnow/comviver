@@ -1,0 +1,60 @@
+    <section id="serviço" class="section white-bg">
+        <div class="main-content grid-one-content" style="padding-top: 50px;" > 
+            <h1 style="margin-top: 20px;">TRABALHOS</h1>
+            <div class="service-grid" >
+                <div class="item">
+                    <h3>MeuAlugado</h3>
+                    <p>Surge através da intenção de propor uma solução para aqueles que moram de aluguel, a comviver possibilita a transformação do cômodo em apenas UM DIA onde pegamos o investimento do cliente e fazemos TUDO dentro das possibilidades do orçamento.</p>
+                </div>
+                <div class="item">
+                    <h3>Acompanhamento</h3>
+                    <p>Acompanhamos a obra presencialmente até a sua conclusão, assegurando que seja como foi plenejado.</p>
+                </div>
+                <div class="item">
+                    <h3>Economia na Reforma</h3>
+                    <p>Posso ajudar a economizar dinheiro a longo prazo. Temos conhecimentos em seleção a materiais e métodos construtivos eficientes, o que pode resultar em redução de desperdícios e custos desnecessários.</p>
+                </div>
+                <div class="item">
+                    <h3>Estética</h3>
+                    <p>Nos contratar garante um olhar profissional e criativo sobre o seu projeto. Somos especialistas e capazes de criar ambientes visualmente atraentes e equilibrados.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+        <section class="section white-bg sect ">
+        <div class="main-content grid-one-content">
+            <h1 style="margin-top: 2rem; font-size: 5rem;">Porcentagem de Projetos</h1>
+
+            
+            <div class="grid left">
+                <div class="ball-content">
+                    <div class="ball-inside">
+                        <p style="font-size: 90px;">+</p>
+                        <div class="element-item" style="font-size: 90px; font-family: libre; color:white;" data-val="100%"></div>  
+                    </div>
+                    <div class="element-item2" style="font-size: 25px; margin-top: 20px; font-family: Arial, Helvetica, sans-serif; color: white;"> Obras finalizadas</div>
+                </div>
+                <div class="ball-content">                    
+                    <div class="ball-inside">
+                        <p style="font-size: 90px;">+</p>
+                        <div class="element-item" style="font-size: 90px; font-family: libre; color:white;" data-val="5 anos">0 anos</div>
+                    </div>
+                    <div class="element-item2" style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;text-align: center; color: white;">Anos em experiência profissional</div>
+                    
+                </div>
+                <div class="ball-content">                    
+                    <div class="ball-inside">
+                        <p style="font-size: 90px;">+</p>
+                        <div class="element-item" style="font-size: 90px; font-family: libre; color: white;" data-val="5700m²"></div>
+                        <p style="font-size: 50px; margin-top: 30px; color: white;">m²</p>
+                    </div>
+                    <div class="element-item2" style="font-size: 25px; margin-top: 10px; font-family: Arial, Helvetica, sans-serif; color: white;">Em projetos</div>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
