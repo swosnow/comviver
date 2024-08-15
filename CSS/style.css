@@ -1,6 +1,6 @@
 /*VARIABLES*/
 :root {
-    --primary-color: #E26455;
+    --primary-color: #e26455;
     --secondary-color: #fc885e;
     --third-color: #F2A313;
     --fourth-color: #F4E9DF; 
@@ -54,6 +54,7 @@ html {
 body{
     font-size: 1.6rem;
     overflow-x: hidden;
+  
     
 }
 
@@ -121,7 +122,7 @@ p {
 /**/
 
 nav{
-    z-index: 99;
+    z-index: 9999;
     position: relative;
     transition: 0.4s;
 }
@@ -167,12 +168,61 @@ nav .containER .menu-btn{
     font-size: 1em;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color); 
+  }
+
 header{
-    height: 70vh;
+    width: 101%;
+    height: 99.9vh;
     background: url(_MIN0492.JPG) center no-repeat fixed;
     background-size: cover;
     position: relative;
     overflow: hidden;
+    
+}
+.invisible-block{
+    margin: 0;
+    
+    position: absolute;
+    height: 97vh;
+    background: transparent;
+    width: 100vw;
+    object-fit: cover;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.invisible-block > img {
+    color: var(--primary-color);
+    width: 60px;
+    margin-bottom: 20px;
+    animation: jumping 1s linear infinite;
+    cursor: pointer;
+}
+@keyframes jumping {
+    from {transform: translateY(-15px);}
+    50% {transform: translateY(0);}
+    to {transform: translateY(-15px);}
 }
 
 header h1{
@@ -323,6 +373,7 @@ header h1{
 .main-bg {    
     background-color: #E26455;
     background-size: cover;
+    width: 101%;
     background-position: center center;    
 }
 .white-bg{
@@ -1017,8 +1068,7 @@ header h1{
 
 .slider{
     height: 100vh;
-    margin-top: -50px;
-    width: 100vw;
+    width: 101vw;
     overflow: hidden;
     position: relative;
 }
@@ -1268,10 +1318,16 @@ header h1{
         opacity: 0;
     }
 }
-
-.space{
-    margin-top: 70px;
+#img > img {
+    width: 60px;
+    
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
 }
+
 
 
 .flip-card {
@@ -1370,6 +1426,7 @@ transform: rotateY(0deg);
 }
 
 .main-footer {
+    width: 101%;
     display: flex;
     align-items: center;
     justify-content: space-around;
