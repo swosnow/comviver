@@ -260,6 +260,8 @@ header h1{
     top: 40%;
     right: 0;
     animation: text1 0.8s ease-in forwards;
+    text-wrap: nowrap;
+   
 }
 
 .h-regular{
